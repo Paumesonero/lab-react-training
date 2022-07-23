@@ -25,7 +25,7 @@
 
 /*** iteration 2  ***/
 
-.greetings-container {
+.greetings-random-container {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
 
 }
 
-.greeting-box {
+.greeting-random-box {
   border: 1px solid black;
   padding: 10px;
 }

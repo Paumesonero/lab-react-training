@@ -15,7 +15,7 @@ export default function Greetings(props) {
             language = 'hello'
     }
     return (
-        <div className='greeting-box'>
+        <div className='greeting-random-box'>
             <h3>{language + ' ' + children}</h3>
         </div>
     )
