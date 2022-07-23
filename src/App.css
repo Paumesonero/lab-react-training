@@ -15,9 +15,25 @@
   gap: 8px;
 }
 
+/*** iteration1  ***/
 .user-card-container {
   display: flex;
   gap: 5px;
   border: 1px solid black;
   width: 90%;
+}
+
+/*** iteration 2  ***/
+
+.greetings-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.greeting-box {
+  border: 1px solid black;
+  padding: 10px;
 }

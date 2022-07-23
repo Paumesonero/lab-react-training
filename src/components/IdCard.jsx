@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function IdCard(props) {
-    console.log(props)
+    //console.log(props)
     return (
         <div className='user-card-container'>
             <img src={props.picture} alt="user" />
