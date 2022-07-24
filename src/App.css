@@ -110,3 +110,27 @@
 .stars {
   font-size: 1.5rem;
 }
+
+/*** iteration 7 ***/
+.driver-pic {
+  width: 80px;
+  height: 80px;
+  clip-path: circle();
+}
+
+.drivers-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.each-driver {
+  background-color: rgb(53, 71, 166);
+  color: white;
+  border-radius: 5px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
