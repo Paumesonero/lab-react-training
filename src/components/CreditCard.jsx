@@ -13,10 +13,9 @@ export default function CreditCard(props) {
     //style settup
 
     const backColor = {
-        backgroundColor: `${bgColor}`,
-        color: `${color}`
+        backgroundColor: bgColor,
+        color: color
     }
-    console.log(backColor)
 
     return (
         <div className='each-credit-card' style={backColor}>
