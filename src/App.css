@@ -134,3 +134,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.visa-astercard {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.visa-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 5px;
+  margin-top: 5px;
+}

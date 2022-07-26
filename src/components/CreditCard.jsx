@@ -1,8 +1,11 @@
 import React from 'react'
+import visa from '../assets/images/visa.png'
+import masterCard from '../assets/images/master-card.svg'
 
 export default function CreditCard(props) {
     const { type, number, expirationMonth, expirationYear, bank, owner, bgColor, color } = props
 
+    const imgType = type === 'Visa' ? visa : masterCard;
     //masking the number
     let lastFourNumbers = number.slice(-4);
     let maskedNumber = lastFourNumbers.padStart(number.length, '●');
@@ -19,8 +22,9 @@ export default function CreditCard(props) {
 
     return (
         <div className='each-credit-card' style={backColor}>
-
-            <p id='type-pos'>{type}</p>
+            <div className='visa-container'>
+                <img src={imgType} alt="visa/mastercard image" className='visa-astercard' />
+            </div>
             <p id='maskedNumber'>{maskedNumber}</p>
             <div className='bank-expiry'>
                 <div className='expire'>
