@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function DriverCard(props) {
     const { name, rating, img, car } = props
-    console.log(car.model)
+    //console.log(car.model)
 
     let driverStars = ''
     if (rating >= 0 && rating < 1) {
