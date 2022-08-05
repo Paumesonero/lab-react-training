@@ -11,7 +11,7 @@ import dice6 from '../assets/images/dice6.png'
 export default function Dice(props) {
     const dices = [diceEmpty, dice1, dice2, dice3, dice4, dice5, dice6];
     let randomDice = dices[Math.floor(Math.random() * dices.length)]
-    console.log(randomDice)
+    //console.log(randomDice)
 
     const [randomImg, setRamdomImg] = useState(randomDice)
 
