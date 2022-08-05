@@ -7,7 +7,7 @@ export default function ClickablePicture(props) {
     console.log(img)
 
     const handleToggle = () => {
-        setImage(!image)
+        setImage(prev => !prev)
     }
     return (
         <div>
