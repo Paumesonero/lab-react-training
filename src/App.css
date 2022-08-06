@@ -175,3 +175,18 @@
 .each-num p {
   font-size: 1.5rem;
 }
+
+.facebook-main-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+  margin-top: 40px;
+}
+
+.facebook-container {
+  border: 2px solid black;
+  display: flex;
+  gap: 10px;
+
+}

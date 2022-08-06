@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export default function Carousel(props) {
     const { images } = props
     const [image, setImage] = useState(0)
-    console.log(image)
+    //console.log(image)
 
     const handleNext = () => {
         if (image === images.length - 1) {

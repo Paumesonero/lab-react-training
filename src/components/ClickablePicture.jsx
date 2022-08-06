@@ -4,7 +4,7 @@ export default function ClickablePicture(props) {
     const { img, imgClicked } = props
 
     const [image, setImage] = useState(true)
-    console.log(img)
+    //console.log(img)
 
     const handleToggle = () => {
         setImage(prev => !prev)

@@ -20,10 +20,10 @@ export default function NumbersTable(props) {
     for (let i = 1; i <= limit; i++) {
 
         if (i % 2 === 0) {
-            boxesArr.push(<div style={evenBoxStyle} className='each-num'><p>{i}</p></div>)
+            boxesArr.push(<div key={i} style={evenBoxStyle} className='each-num'><p>{i}</p></div>)
 
         } else {
-            boxesArr.push(<div style={oddBoxStyle} className='each-num'><p>{i}</p></div>)
+            boxesArr.push(<div key={i} style={oddBoxStyle} className='each-num'><p>{i}</p></div>)
         }
     }
     return (
