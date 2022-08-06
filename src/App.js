@@ -11,6 +11,7 @@ import maxenceGlasses from './assets/images/maxence-glasses.png'
 import ClickablePicture from './components/ClickablePicture';
 import Carousel from './components/Carousel';
 import Dice from './components/Dice';
+import NumbersTable from './components/NumbersTable';
 
 import './App.css';
 
@@ -126,6 +127,8 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
       />
+
+      <NumbersTable limit={20} />
     </div>
   );
 }
