@@ -1,10 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import profiles from '../data/berlin.json';
 
-export default function Facebook() {
-    console.log(profiles)
+export default function Facebook(props) {
+    const [profilesArr, setProfilesArr] = useState(profiles)
+    const [color, setColor] = useState('white')
+    //console.log(profiles)
+
+    // filtering the countries so we can create one button per country.
+    const uniqueCountries = [];
+    const unique = profiles.filter(el => {
+        const isDuplicate = uniqueCountries.includes(el.country);
+
+        if (!isDuplicate) {
+            uniqueCountries.push(el.country)
+            return true
+        }
+        return false
+    })
+    //console.log(uniqueCountries)
+
+    // handeling what happends when clicking the buttons.
+
+    const handleCountryBtn = (e) => {
+        console.log(e)
+        const filteredProfiles = profiles.filter(el => {
+            return el.country === e
+        });
+
+        console.log(filteredProfiles)
+        setProfilesArr(filteredProfiles)
+
+    }
+
     return (
         <div className='facebook-main-box'>
+            <div>
+                {uniqueCountries.map(el => {
+                    return (
+                        <button onClick={() => handleCountryBtn(el)} value={el}  >{el}</button>
+                    )
+                })}
+            </div>
+
             {profiles.map(el => {
                 return (
                     <div className='facebook-container'>
