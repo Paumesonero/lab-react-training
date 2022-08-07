@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import profiles from '../data/berlin.json';
-
+//ITERATION 14 NOT FINISHED YET.
 export default function Facebook(props) {
     const [profilesArr, setProfilesArr] = useState(profiles)
     const [color, setColor] = useState('white')
@@ -27,7 +27,9 @@ export default function Facebook(props) {
             return el.country === e
         });
 
-        console.log(filteredProfiles)
+        if (filteredProfiles) {
+            setColor('blue')
+        }
         setProfilesArr(filteredProfiles)
 
     }
